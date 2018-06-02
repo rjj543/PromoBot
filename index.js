@@ -6,21 +6,21 @@ const bot = new Discord.Client();
 
 bot.on('message', (message) => {
    
-    if(message.content == prefix + 'Channel' || 'channel') {
+    if(message.content == prefix + 'Channel') {
         message.channel.sendMessage('https://www.youtube.com/channel/UChXNvQj5mw-vJmC_Lv3f10Q');
     }
 });
 
 bot.on('message', (message) => {
    
-    if(message.content == prefix + 'SecondChannel' || 'secondchannel') {
+    if(message.content == prefix + 'SecondChannel') {
         message.channel.sendMessage('https://www.youtube.com/channel/UCbjZGpSgIMbfdw5OXPzJvbQ');
     }
 });
 
 bot.on('message', (message) => {
    
-    if(message.content == prefix + 'Cmds' || 'cmds') {
+    if(message.content == prefix + 'Cmds') {
         message.channel.sendMessage('```Channel``` ```SecondChannel``` ```Prefix.```');
     }
 });
