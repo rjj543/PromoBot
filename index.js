@@ -32,7 +32,12 @@ bot.on('message', (message) => {
     }
 });
 
-
+bot.on('message', (message) => {
+   
+    if(message.content == prefix + 'Gaybomb') {
+        message.channel.sendMessage('https://cdn.discordapp.com/attachments/413304257232633856/415435880271052803/30.PNG');
+    }
+});
 
 bot.login(process.env.BOT_TOKEN);
 // yeet it up B
